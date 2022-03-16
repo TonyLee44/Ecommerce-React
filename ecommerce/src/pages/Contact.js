@@ -1,8 +1,7 @@
-import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
+import React from "react";
 import "../css/main.css";
 
-const Home = () => {
+const Contact = () => {
     return(
         <div>
         <header class="stretch">
@@ -48,13 +47,13 @@ const Home = () => {
     </div>
     <br />
     <div>
-      <a href="https://www.facebook.com/" target="_blank">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
         <img src="img/facebooklogo.jpeg" alt="facebook" width="50px"/>
       </a>
-      <a href="https://www.instagram.com/" target="_blank">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
         <img src="img/instagramlogo.jpeg" alt="instagram" width="50px"/>
       </a>
-      <a href="https://www.twitter.com/" target="_blank">
+      <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
         <img src="img/twitterlogo.png" alt="instagram" width="50px"/>
       </a>
     </div>
@@ -62,3 +61,5 @@ const Home = () => {
         </div>
     );
 }
+
+export default Contact;
