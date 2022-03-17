@@ -3,12 +3,7 @@ import React from 'react';
 export default function Home() {
     return(
         <div>
-        <header className="stretch">
-    <img className="logo" src="img/ecommercelogo.png" alt="logo"/>
-    <h1>Gone Golfing</h1>
-  </header>
-
-  <section id="hero">
+ <section id="hero">
     <h2 className="whitesmoke">Golfing is a necessity, grab your gears for your next round!</h2>
   </section>
   <section>

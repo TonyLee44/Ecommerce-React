@@ -1,13 +1,13 @@
-import React, { Component } from "react";
 import Nav from "./components/Nav";
 import {
   BrowserRouter as Router,
-  Route,
   Routes,
+  Route,
 } from "react-router-dom";
 import Home from './components/Home';
 import Products from './components/Products';
 import Contact from './components/Contact';
+import './App.css';
 
 function App() {
     return (

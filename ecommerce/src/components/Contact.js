@@ -4,11 +4,6 @@ import React from 'react';
 export default function Contact() {
     return(
         <div>
-        <header className="stretch">
-    <img className="logo" src="img/ecommercelogo.png" alt="logo"/>
-    <h1>Gone Golfing</h1>
-  </header>
-
   <form>
       <label for="first">First name:</label><br />
       <input type="text" id="first" name="first" placeholder="John" required /><br />
@@ -20,7 +15,7 @@ export default function Contact() {
       <input type="email" id="email" name="email" placeholder="JohnDoe@gmail.com" /><br />
       <label for="comments">Comments:</label><br />
       <textarea name="comments" id="comments" placeholder="Leave a question or comment here..."></textarea> <br />
-      <input type="submit" formaction="#"/>
+      <input type="submit" formAction="#"/>
   </form>
 
   <footer id="footer">

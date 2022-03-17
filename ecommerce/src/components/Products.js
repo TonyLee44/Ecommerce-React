@@ -3,11 +3,7 @@ import React from 'react';
 export default function Products() {
     return(
         <div>
-        <header className="stretch">
-    <img className="logo" src="img/ecommercelogo.png" alt="logo"/>
-    <h1>Gone Golfing</h1>
-  </header>
-
+        
   <h2>Gone Golfing with Taylormade</h2>
 
   <section className="productContainer">
