@@ -1,24 +1,15 @@
-import React from "react";
-import "../css/main.css";
+import React from 'react';
 
-const Home = () => {
+export default function Home() {
     return(
         <div>
-        <header class="stretch">
-    <img class="logo" src="img/ecommercelogo.png" alt="logo"/>
+        <header className="stretch">
+    <img className="logo" src="img/ecommercelogo.png" alt="logo"/>
     <h1>Gone Golfing</h1>
-
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <section id="hero">
-    <h2 class="whitesmoke">Golfing is a necessity, grab your gears for your next round!</h2>
+    <h2 className="whitesmoke">Golfing is a necessity, grab your gears for your next round!</h2>
   </section>
   <section>
       <h3>Whether you are a beginner, amateur, or pro, you are in the right place! <br /> Check out the products page for more information or if you have any questions just contact us through the contact page. <br />
@@ -26,14 +17,14 @@ const Home = () => {
     </section>
 
   <footer id="footer">
-    <div class="footer-text">
-      <div class="footer-links">
+    <div className="footer-text">
+      <div className="footer-links">
         <a href="home.html"> Home |</a>
         <a href="products.html"> Products </a>
         <a href="contact.html"> | Contact Us </a>
       </div>
       <br />
-      <div class="copyright">
+      <div className="copyright">
         <p>
           &copy; Gone Golfing | ALL RIGHTS RESERVED.
         </p>
@@ -55,5 +46,3 @@ const Home = () => {
         </div>
     );
 }
-
-export default Home;

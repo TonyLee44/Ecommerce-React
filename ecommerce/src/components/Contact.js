@@ -1,20 +1,12 @@
-import React from "react";
-import "../css/main.css";
+import React from 'react';
 
-const Contact = () => {
+
+export default function Contact() {
     return(
         <div>
-        <header class="stretch">
-    <img class="logo" src="img/ecommercelogo.png" alt="logo"/>
+        <header className="stretch">
+    <img className="logo" src="img/ecommercelogo.png" alt="logo"/>
     <h1>Gone Golfing</h1>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <form>
@@ -32,14 +24,14 @@ const Contact = () => {
   </form>
 
   <footer id="footer">
-    <div class="footer-text">
-      <div class="footer-links">
+    <div className="footer-text">
+      <div className="footer-links">
         <a href="index.html"> Home |</a>
         <a href="products.html"> Products </a>
         <a href="contact.html"> | Contact Us </a>
       </div>
       <br />
-      <div class="copyright">
+      <div className="copyright">
         <p>
           &copy; Gone Golfing | ALL RIGHTS RESERVED.
         </p>
@@ -61,5 +53,3 @@ const Contact = () => {
         </div>
     );
 }
-
-export default Contact;

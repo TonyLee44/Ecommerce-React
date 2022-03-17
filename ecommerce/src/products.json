@@ -1,0 +1,56 @@
+[
+    {
+        "image": "/css/img/sim2max.webp",
+        "title": "Sim 2 Max Driver",
+        "description": "Farthest driver of the year!",
+        "price": "529.99"
+    },
+    {
+        "image": "/css/img/3wood.jpg",
+        "title": "Sim 2 Max 3-Wood",
+        "description": "Most versatile off the tee and fairway!",
+        "price": "299.99"
+    },
+    {
+        "image": "/css/img/rescue.jpg",
+        "title": "Sim 2 Max Rescue Hybrid",
+        "description": "Stuck in the rough? No problem!",
+        "price": "249.99"
+    },
+    {
+        "image": "/css/img/irons.jpg",
+        "title": "Sim 2 Max Irons (5-P)",
+        "description": "Distance & Forgiveness!",
+        "price": "779.99"
+    },
+    {
+        "image": "/css/img/mg3.webp",
+        "title": "Taylormade MG3 56",
+        "description": "Get out of the bunker",
+        "price": "199.99"
+    },
+    {
+        "image": "/css/img/golfbag.webp",
+        "title": "Taylormade Golf Bag",
+        "description": "Pack your equipments in here!",
+        "price": "219.99"
+    },
+    {
+        "image": "/css/img/tp5x.jpeg",
+        "title": "Taylormade TP5x",
+        "description": "Spin and distance, all-in-one",
+        "price": "47.99"
+    },
+    {
+        "image": "/css/img/gloves.jpeg",
+        "title": "Taylormade Gloves",
+        "description": "Don't lose grip!",
+        "price": "24.99"
+    },
+    {
+        "image": "/css/img/tees.jpeg",
+        "title": "Taylormade Tees",
+        "description": "Grab a tee to get off the tee box!",
+        "price": "9.99"
+    }
+]
