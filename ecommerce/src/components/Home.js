@@ -1,11 +1,10 @@
 import React from 'react';
+import Slide from './Slide';
 
 export default function Home() {
     return(
         <div>
- <section id="hero">
-    <h2 className="whitesmoke">Golfing is a necessity, grab your gears for your next round!</h2>
-  </section>
+          <Slide />
   <section>
       <h3>Whether you are a beginner, amateur, or pro, you are in the right place! <br /> Check out the products page for more information or if you have any questions just contact us through the contact page. <br />
       Come and grab your gears for your next round of golf!</h3>

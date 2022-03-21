@@ -5,15 +5,15 @@ export default function Contact() {
     return(
         <div>
   <form>
-      <label for="first">First name:</label><br />
+      <label htmlFor="first">First name:</label><br />
       <input type="text" id="first" name="first" placeholder="John" required /><br />
-      <label for="last">Last name:</label><br />
+      <label htmlFor="last">Last name:</label><br />
       <input type="text" id="last" name="last" placeholder="Doe" required /><br />
-      <label for="phone">Phone Number:</label><br />
+      <label htmlFor="phone">Phone Number:</label><br />
       <input type="tel" id="phone" name="phone" placeholder="555-555-5555" /><br />
-      <label for="email">E-mail:</label><br />
+      <label htmlFor="email">E-mail:</label><br />
       <input type="email" id="email" name="email" placeholder="JohnDoe@gmail.com" /><br />
-      <label for="comments">Comments:</label><br />
+      <label htmlFor="comments">Comments:</label><br />
       <textarea name="comments" id="comments" placeholder="Leave a question or comment here..."></textarea> <br />
       <input type="submit" formAction="#"/>
   </form>
