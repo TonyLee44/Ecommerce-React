@@ -2,8 +2,8 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 
 export default function Contact() {
-  const validEmail = '^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$';
-  const validName = "^[a-z,.'-]+$";
+  const validEmail = new RegExp('^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$');
+  const validName = new RegExp("^[a-zA-Z,.'-]+$");
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -18,13 +18,24 @@ export default function Contact() {
       const handleSubmit = (e) => {
           e.preventDefault();
 
-          if (!validName.test(firstName) || !validName.test(lastName) || !validEmail.test(email)){
-              setErrorMessage('Invalid information, try again!')
-              return
-            } else {
-                setErrorMessage(null);
+          console.log(validName.test(firstName))
+          console.log(validName.test(lastName))
+          console.log(validEmail.test(email))
+
+          if (!validName.test(firstName)){
+              setErrorMessage('Invalid First Name, try again!');
+            } 
+            if (!validName.test(lastName)) {
+              setErrorMessage('Invalid Last Name, try again!');
             }
-            return
+            if (!validEmail.test(email)) {
+              setErrorMessage('Invalid Email, try again!');
+            }
+            else {
+                setErrorMessage(null);
+                return
+            }
+            return 
       }
   
     return(
@@ -41,7 +52,7 @@ export default function Contact() {
       <label htmlFor="comments">Comments:</label><br />
       <textarea name="comments" id="comments" placeholder="Leave a question or comment here..."></textarea> <br />
       {errorMessage ? (<div>{errorMessage}</div>) : null}
-      <button disabled={isButtonDisabled} onSubmit={handleSubmit}>Submit</button>
+      <button disabled={isButtonDisabled} onSubmit={handleSubmit} formAction="#">Submit</button>
   </form>
 
         </div>
