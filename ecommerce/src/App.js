@@ -1,4 +1,5 @@
-import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,7 +13,7 @@ import './App.css';
 function App() {
     return (
       <Router>
-        <Nav />
+        <Header />
     <div>
             <Routes>
                 <Route path="/" element={<Home />}></Route>
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/contact" element={<Contact />}></Route>
             </Routes>
     </div>
+    <Footer />
     </Router>
   );
   }
