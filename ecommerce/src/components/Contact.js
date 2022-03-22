@@ -1,22 +1,24 @@
 import React from 'react';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 export default function Contact() {
   const validEmail = '^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$';
+  const validName = "^[a-z,.'-]+$";
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [errorMessage, setErrorMessage] = useState(null);
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
-
+    useEffect(() => {
       if (firstName && lastName && email) {
           setIsButtonDisabled(false);
       }
+    });
 
       const handleSubmit = (e) => {
           e.preventDefault();
 
-          if (!firstName || !lastName || !validEmail.test(email)){
+          if (!validName.test(firstName) || !validName.test(lastName) || !validEmail.test(email)){
               setErrorMessage('Invalid information, try again!')
               return
             } else {
