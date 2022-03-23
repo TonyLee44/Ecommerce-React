@@ -157,7 +157,7 @@ input {
 
 .red {
   color: red;
-  font: bold;
+  font-weight: bold;
 }
 
 /* footer css */
