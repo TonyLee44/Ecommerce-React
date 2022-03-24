@@ -16,7 +16,7 @@ export default function Contact() {
       if (firstName && lastName && email) {
           setIsButtonDisabled(false);
       }
-    });
+    }, [firstName, lastName, email]);
 
       const handleSubmit = (e) => {
           e.preventDefault();
